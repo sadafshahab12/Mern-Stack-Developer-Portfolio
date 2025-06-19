@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins";
+  --color-mypurple: #8490ff;
+  --color-mysky: #62bdfc;
+  --drop-shadow-text: 0 35px 35px #8490ff; 
+  --text-10: 10px;
+  --text-12: 12px;
+  --text-14: 14px;
+  --breakpoint-xxxs: 22rem; /*335px*/
+  --breakpoint-xxs: 27rem; /*435px*/
+  --breakpoint-xs: 33rem; /*520px*/
+  --breakpoint-mdl: 54rem; /*860px*/
+}
+
+.gradient_text {
+  background-image: linear-gradient(
+    150deg,
+    #8490ff,
+    #62bdfc,
+    #8490ff,
+    #62bdfc,
+    #8490ff
+  );
+  background-size: 200% 200%;
+  animation: gradientBlink 3s infinite;
+}
+
+@keyframes gradientBlink {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+

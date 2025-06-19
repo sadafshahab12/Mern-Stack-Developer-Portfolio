@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins";
+  --color-mypurple: #8490ff;
+  --color-mysky: #62bdfc;
+  --color-textlightBlack: #222222;
+}
+@layer components {
+  .button {
+    @apply text-sm bg-gradient-to-br from-mypurple to-mysky py-2 px-4 cursor-pointer font-medium text-white active:scale-90 transition-all ease-in-out duration-200;
+  }
+  .tag {
+    @apply text-sm bg-gradient-to-br from-mypurple to-mysky py-2 px-4 font-bold text-white;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-left {
+    @apply flex  items-center;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+  .service-group-hover-effect {
+    @apply bg-clip-text group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-mypurple group-hover:to-mysky transition-all duration-300;
+  }
+}
