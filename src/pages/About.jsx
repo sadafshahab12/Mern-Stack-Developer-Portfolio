@@ -74,7 +74,7 @@ const About = () => {
             </p>
             <div className="flex gap-4 items-center">
               <a
-                href="/resume.pdf"
+                href="/mern stack developer.pdf"
                 download
                 className="button flex items-center gap-2 hover:bg-gradient-to-b hover:from-textlightBlack hover:to-textlightBlack"
               >

@@ -1,7 +1,13 @@
-import { FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { FaGithub, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import { IoLogoCss3, IoShieldOutline } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiClerk, SiFigma, SiFirebase, SiSanity } from "react-icons/si";
+import {
+  SiClerk,
+  SiExpress,
+  SiFigma,
+  SiFirebase,
+  SiSanity,
+} from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import {
   FaLaptopCode,
@@ -10,7 +16,28 @@ import {
   FaPalette,
   FaTabletAlt,
 } from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
 export const projectData = [
+  {
+    title: "Food APP (Full Stack)",
+    technologies_used: [
+      "React Js",
+      "Tailwind Css",
+      "Node js",
+      "Mongodb",
+      "express js",
+      "Full Stack",
+    ],
+    icon: [
+      <FaReact key={"ReactJS"} className="w-4 h-4" />,
+      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
+      <FaNodeJs key={"nodejs"} className="w-4 h-4" />,
+      <DiMongodb key={"mongodb"} className="w-4 h-4" />,
+      <SiExpress key={"expressjs"} className="w-4 h-4" />,
+    ],
+    image: "/project/food app.png",
+    link: "https://food-app-mern-stack-project-fronten.vercel.app/",
+  },
   {
     title: "Furniro Ecommerce Website",
     technologies_used: [

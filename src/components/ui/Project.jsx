@@ -41,6 +41,7 @@ const Project = () => {
     "API",
     "Auth",
     "Sanity",
+    "Full Stack",
   ];
 
   const containerVariants = {
@@ -94,7 +95,7 @@ const Project = () => {
         </motion.div>
 
         <div className="filter py-10 sm:block hidden">
-          <ul className="text-12 uppercase flex justify-center gap-6 md:gap-10 flex-wrap">
+          <ul className="text-12 uppercase flex justify-center gap-6 md:gap-4 flex-wrap">
             {filterArray.map((filter, index) => (
               <motion.li
                 key={index}
@@ -173,9 +174,9 @@ const Project = () => {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110 shadow-lg"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300  h-63 flex items-end p-4">
                       <a
                         href={project.link}
                         target="_blank"
