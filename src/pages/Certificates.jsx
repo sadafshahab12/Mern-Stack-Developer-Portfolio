@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Certificate from "../components/ui/Certificate";
 const Certificates = () => {
     useEffect(() => {
