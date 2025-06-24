@@ -10,12 +10,22 @@ const About = () => {
     document.title = "About | Sadaf Shahab Portfolio";
   }, []);
 
-  const skills = [
+  const frontendSkills = [
     { name: "React.js", level: 90 },
     { name: "Next.js", level: 85 },
     { name: "Tailwind CSS", level: 95 },
     { name: "JavaScript", level: 90 },
+    { name: "TypeScript", level: 80 },
     { name: "HTML/CSS", level: 95 },
+    { name: "Figma (UI/UX)", level: 85 },
+  ];
+
+  const backendSkills = [
+    { name: "Node.js", level: 85 },
+    { name: "Express.js", level: 80 },
+    { name: "MongoDB", level: 90 },
+    { name: "Python", level: 75 },
+    { name: "Java", level: 70 },
   ];
 
   const experience = [
@@ -23,7 +33,8 @@ const About = () => {
       year: "2024",
       title: "Frontend Developer",
       company: "Freelance",
-      description: "Building modern web applications using React.js and Next.js",
+      description:
+        "Building modern web applications using React.js and Next.js",
     },
     {
       year: "2023",
@@ -42,7 +53,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="max-w-6xl mx-auto  px-6 xxs:px-8 mdl:px-10 "
+          className="max-w-6xl mx-auto px-6 xxs:px-8 mdl:px-10"
         >
           <div className="space-y-7 md:pb-0 pb-10 order-1 mdl:order-2">
             <p className="uppercase text-sm tracking-widest">About Me</p>
@@ -56,10 +67,13 @@ const About = () => {
               </strong>{" "}
               specializing in{" "}
               <strong className="font-bold text-primary">
-                {" "}
-                React.js, Next.js, and Tailwind CSS{" "}
-              </strong>
-              . I craft high-performance,
+                React.js, Next.js, and Tailwind CSS
+              </strong>{" "}
+              on the frontend, and{" "}
+              <strong className="font-bold text-primary">
+                Node.js, Express.js, MongoDB, and Python
+              </strong>{" "}
+              on the backend. I craft high-performance,
               <strong className="font-bold text-primary uppercase">
                 {" "}
                 responsive
@@ -70,7 +84,8 @@ const About = () => {
               exploring AI-driven web development, I aim to integrate artificial
               intelligence into interactive applications. With a keen eye for
               detail and a growth mindset, I thrive on solving complex
-              challenges and pushing the boundaries of front-end development.
+              challenges and pushing the boundaries of both front-end and
+              back-end development.
             </p>
             <div className="flex gap-4 items-center">
               <a
@@ -79,7 +94,7 @@ const About = () => {
                 className="button flex items-center gap-2 hover:bg-gradient-to-b hover:from-textlightBlack hover:to-textlightBlack"
               >
                 <MdOutlineFileDownload className="w-5 h-5" />
-                <p >Download CV</p>
+                <p>Download CV</p>
               </a>
               <div className="flex gap-4">
                 <a
@@ -104,12 +119,11 @@ const About = () => {
                   rel="noopener noreferrer"
                   className="text-2xl hover:text-primary transition-colors"
                 >
-               <FaXTwitter />
+                  <FaXTwitter />
                 </a>
               </div>
             </div>
           </div>
-   
         </motion.div>
 
         {/* Skills Section */}
@@ -121,8 +135,31 @@ const About = () => {
           className="max-w-6xl mx-auto mt-20 px-6 xxs:px-8 mdl:px-10"
         >
           <h2 className="text-2xl font-bold mb-8 text-center">My Skills</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {skills.map((skill, index) => (
+
+          <h3 className="text-xl font-semibold mb-4">Frontend Development</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 mb-10">
+            {frontendSkills.map((skill, index) => (
+              <div key={index} className="space-y-2">
+                <div className="flex justify-between">
+                  <span className="font-medium">{skill.name}</span>
+                  <span>{skill.level}%</span>
+                </div>
+                <div className="h-2 bg-gray-200 rounded-full">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${skill.level}%` }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                    className="h-full bg-gradient-to-r from-primary to-secondary rounded-full"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="text-xl font-semibold mb-4">Backend Development</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+            {backendSkills.map((skill, index) => (
               <div key={index} className="space-y-2">
                 <div className="flex justify-between">
                   <span className="font-medium">{skill.name}</span>
