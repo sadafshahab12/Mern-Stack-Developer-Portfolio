@@ -105,7 +105,7 @@ const ContactForm = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                <BsPerson className="text-mypurple" />
+                <BsPerson className="text-primary" />
                 Your Name
               </label>
               <motion.input
@@ -114,7 +114,7 @@ const ContactForm = () => {
                 type="text"
                 placeholder="John Doe"
                 {...register("name", { required: true })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-mypurple focus:ring-2 focus:ring-mypurple/20 outline-none transition-all duration-300"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300"
               />
               {errors.name && (
                 <motion.p
@@ -130,7 +130,7 @@ const ContactForm = () => {
 
             <div className="space-y-2">
               <label className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                <BsEnvelope className="text-mypurple" />
+                <BsEnvelope className="text-primary" />
                 Your Email
               </label>
               <motion.input
@@ -142,7 +142,7 @@ const ContactForm = () => {
                   required: true,
                   pattern: /^\S+@\S+$/i,
                 })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-mypurple focus:ring-2 focus:ring-mypurple/20 outline-none transition-all duration-300"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300"
               />
               {errors.email && (
                 <motion.p
@@ -160,7 +160,7 @@ const ContactForm = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                <BsPhone className="text-mypurple" />
+                <BsPhone className="text-primary" />
                 Phone Number
               </label>
               <motion.input
@@ -172,7 +172,7 @@ const ContactForm = () => {
                   required: true,
                   pattern: /^[0-9+\-() ]*$/i,
                 })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-mypurple focus:ring-2 focus:ring-mypurple/20 outline-none transition-all duration-300"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300"
               />
               {errors.phone && (
                 <motion.p
@@ -188,7 +188,7 @@ const ContactForm = () => {
 
             <div className="space-y-2">
               <label className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                <BsChat className="text-mypurple" />
+                <BsChat className="text-primary" />
                 Subject
               </label>
               <motion.input
@@ -197,7 +197,7 @@ const ContactForm = () => {
                 type="text"
                 placeholder="Project Inquiry"
                 {...register("subject", { required: true })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-mypurple focus:ring-2 focus:ring-mypurple/20 outline-none transition-all duration-300"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300"
               />
               {errors.subject && (
                 <motion.p
@@ -214,7 +214,7 @@ const ContactForm = () => {
 
           <div className="space-y-2">
             <label className="text-sm font-medium text-gray-700 flex items-center gap-2">
-              <BsChat className="text-mypurple" />
+              <BsChat className="text-primary" />
               Your Message
             </label>
             <motion.textarea
@@ -223,7 +223,7 @@ const ContactForm = () => {
               placeholder="Tell me about your project..."
               {...register("message", { required: true })}
               rows="5"
-              className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-mypurple focus:ring-2 focus:ring-mypurple/20 outline-none transition-all duration-300 resize-none"
+              className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 resize-none"
             />
             {errors.message && (
               <motion.p
@@ -245,7 +245,7 @@ const ContactForm = () => {
             className={`w-full py-3 px-6 rounded-lg font-medium text-white transition-all duration-300 ${
               loading
                 ? "bg-gray-400 cursor-not-allowed"
-                : "bg-gradient-to-r from-mypurple to-mysky hover:shadow-lg"
+                : "bg-gradient-to-r from-primary to-secondary hover:shadow-lg"
             }`}
           >
             {loading ? (

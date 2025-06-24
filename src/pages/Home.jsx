@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import AboutMe from "../components/ui/AboutMe";
 import Hero from "../components/ui/Hero";
 import PricePlan from "../components/ui/PricePlan";
 import Project from "../components/ui/Project";
@@ -13,7 +12,6 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <AboutMe />
       <Service />
       <ProjectStats />
       <Project />

@@ -1,110 +1,96 @@
 import { MdOutlineFileDownload } from "react-icons/md";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <section className="bg-[#f9f9ff] pt-30 lg:pt-20" aria-label="Hero Section">
+    <section
+      className="bg-[#f9f9ff] pt-25 sm:pt-30 lg:pt-20"
+      aria-label="Hero Section"
+    >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="max-w-6xl mx-auto grid grid-cols-1 mdl:grid-cols-[60%_40%] items-center gap-5 lg:gap-5 px-6 xxs:px-8 mdl:px-10 h-full md:h-screen"
+        className="max-w-6xl mx-auto px-6 xxs:px-8 min-h-[80vh] sm:min-h-[90vh] flex flex-col justify-center items-center"
       >
-        <div className="space-y-7 md:pb-0 pb-10">
-          <p className="uppercase text-sm tracking-widest text-mypurple">
+        <div className="space-y-6 text-center">
+          <p className="uppercase text-lg tracking-widest text-primary">
             This is ME
           </p>
-          <h1 className="uppercase font-bold xxs:font-semibold text-3xl xxxs:text-4xl xxs:text-5xl xs:text-7xl">
+          <h1 className="uppercase font-bold text-5xl xxxs:text-6xl xxs:text-7xl sm:text-9xl">
             Sadaf Shahab
           </h1>
-          <h2 className="text-xl xs:text-2xl font-semibold text-gray-700">
+          <h2 className="text-lg xxs:text-xl xs:text-2xl font-semibold text-gray-700">
             MERN Stack Developer & UI/UX Designer
           </h2>
-          <p className="text-gray-500 text-12 xxxs:text-sm font-light leading-5 xxxs:leading-7">
+          <p className="text-gray-500 text-12 xxxs:text-sm font-light leading-5 xxxs:leading-7 ">
             A dedicated{" "}
-            <strong className="font-bold text-mypurple">
+            <strong className="font-bold text-primary">
               MERN Stack Developer
             </strong>
             r with expertise in{" "}
-            <strong className="font-bold text-mypurple">
+            <strong className="font-bold text-primary">
               React.js, Next.js (TypeScript), and Tailwind CSS
             </strong>
             , passionate about building responsive, high-performance web
-            applications. 
+            applications.
           </p>
           <div className="flex flex-col gap-4">
             <p className="text-sm xs:text-[16px] font-medium">
               {`Let's`} create something amazing together!
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
               <a
                 href="/mern stack developer.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Download Resume"
-                className="button flex-center gap-2 sm:text-sm text-12 hover:bg-gradient-to-b hover:from-textlightBlack hover:to-textlightBlack"
+                className="button flex-center text-black gap-2 sm:text-sm text-12 hover:bg-gradient-to-b hover:from-textlightBlack hover:to-textlightBlack hover:text-white"
               >
                 Download CV <MdOutlineFileDownload className="w-5 h-5" />
               </a>
               <a
                 href="/contact"
                 aria-label="Contact Me"
-                className="button sm:text-sm text-12 hover:bg-gradient-to-b hover:from-textlightBlack hover:to-textlightBlack"
+                className="button sm:text-sm text-12 text-black hover:bg-gradient-to-b hover:from-textlightBlack hover:to-textlightBlack hover:text-white xs:block hidden"
               >
-                Hire me
+                Available for Hire
               </a>
             </div>
-            <div className="flex gap-4 mt-2">
+            <div className="flex justify-center gap-4 mt-2">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/sadafshahab12"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
-                className="text-2xl hover:text-mypurple transition-colors"
+                className="text-2xl hover:text-primary transition-colors"
               >
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="http://www.linkedin.com/in/sadaf-shahab-ss01"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
-                className="text-2xl hover:text-mypurple transition-colors"
+                className="text-2xl hover:text-primary transition-colors"
               >
                 <FaLinkedin />
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://twitter.com/sadafshahab12"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter Profile"
-                className="text-2xl hover:text-mypurple transition-colors"
+                className="text-2xl hover:text-primary transition-colors"
               >
-                <FaTwitter />
+                <FaXTwitter />
               </a>
             </div>
           </div>
         </div>
-        <motion.div
-          className="relative hidden sm:flex justify-center items-center group"
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          <img
-            src="/frame5.png"
-            alt="Decorative frame for profile picture"
-            className="h-auto w-full max-w-[200px] xxxs:max-w-[250px] xxs:max-w-sm transition-transform duration-300 group-hover:scale-105"
-          />
-          <img
-            src="/heroframeimg.png"
-            alt="Sadaf Shahab - MERN Stack Developer"
-            className="absolute w-3/4 md:w-5/5 max-w-[300px] xs:max-w-[350px] object-cover rounded-full transition-transform duration-300 group-hover:scale-105"
-          />
-        </motion.div>
       </motion.div>
     </section>
   );

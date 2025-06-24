@@ -2,9 +2,9 @@
 
 @theme {
   --font-poppins: "Poppins";
-  --color-mypurple: #8490ff;
-  --color-mysky: #62bdfc;
-  --drop-shadow-text: 0 35px 35px #8490ff; 
+  --color-primary: #ff666d;
+  --color-secondary: #ffbb71;
+  --drop-shadow-text: 0 35px 35px #8490ff;
   --text-10: 10px;
   --text-12: 12px;
   --text-14: 14px;
@@ -17,11 +17,11 @@
 .gradient_text {
   background-image: linear-gradient(
     150deg,
-    #8490ff,
-    #62bdfc,
-    #8490ff,
-    #62bdfc,
-    #8490ff
+    #ff666d,
+    #ffbb71,
+    #ff666d,
+    #ffbb71,
+    #ff666d
   );
   background-size: 200% 200%;
   animation: gradientBlink 3s infinite;
@@ -38,4 +38,3 @@
     background-position: 0% 50%;
   }
 }
-

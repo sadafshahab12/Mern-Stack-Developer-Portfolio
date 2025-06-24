@@ -66,10 +66,10 @@ const PricePlan = () => {
               whileHover={{ y: -10 }}
               className="relative group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-mypurple to-mysky rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-lg transition-all duration-300">
                 <div className="space-y-4">
-                  <h1 className="sm:text-2xl font-semibold text-xl text-center text-gray-800 group-hover:text-mypurple transition-colors duration-300">
+                  <h1 className="sm:text-2xl font-semibold text-xl text-center text-gray-800 group-hover:text-primary transition-colors duration-300">
                     {plan.name}
                   </h1>
                   <p className="text-12 font-light text-gray-600 text-center">
@@ -77,8 +77,8 @@ const PricePlan = () => {
                   </p>
                   <div className="flex justify-center">
                     <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-br from-mypurple to-mysky rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <h2 className="relative text-2xl sm:text-3xl font-bold h-22 xs:h-28 w-22 xs:w-28 border-2 border-gray-200 bg-white text-mypurple flex items-center justify-center rounded-full shadow-md group-hover:border-transparent transition-all duration-300">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <h2 className="relative text-2xl sm:text-3xl font-bold h-22 xs:h-28 w-22 xs:w-28 border-2 border-gray-200 bg-white text-primary flex items-center justify-center rounded-full shadow-md group-hover:border-transparent transition-all duration-300">
                         ${plan.price}
                       </h2>
                     </div>
@@ -87,7 +87,7 @@ const PricePlan = () => {
                     {plan.bestFor.map((best, i) => (
                       <span
                         key={i}
-                        className="text-10 bg-gray-100 px-3 py-1.5 text-mypurple rounded-full shadow-sm group-hover:bg-mypurple/10 transition-colors duration-300"
+                        className="text-10 bg-gray-100 px-3 py-1.5 text-primary rounded-full shadow-sm group-hover:bg-primary/10 transition-colors duration-300"
                       >
                         {best}
                       </span>
@@ -96,7 +96,7 @@ const PricePlan = () => {
 
                   {/* Required Features */}
                   <div className="py-4 space-y-3">
-                    <h3 className="text-mypurple font-semibold">
+                    <h3 className="text-primary font-semibold">
                       Required Features:
                     </h3>
                     {plan.features.required.map((feature, i) => (
@@ -104,7 +104,7 @@ const PricePlan = () => {
                         key={i}
                         className="flex items-center gap-3 text-12 text-gray-600 group-hover:text-gray-800 transition-colors duration-300"
                       >
-                        <FaCheck className="text-mypurple flex-shrink-0" />
+                        <FaCheck className="text-primary flex-shrink-0" />
                         <p>{feature}</p>
                       </div>
                     ))}
@@ -112,7 +112,7 @@ const PricePlan = () => {
 
                   {/* Extra Features */}
                   <div className="py-4 space-y-3">
-                    <h3 className="text-mypurple font-semibold">
+                    <h3 className="text-primary font-semibold">
                       Extra Features:
                     </h3>
                     {plan.features.extra.map((feature, i) => (
@@ -120,7 +120,7 @@ const PricePlan = () => {
                         key={i}
                         className="flex items-center gap-3 text-12 text-gray-600 group-hover:text-gray-800 transition-colors duration-300"
                       >
-                        <FaCheck className="text-mypurple flex-shrink-0" />
+                        <FaCheck className="text-primary flex-shrink-0" />
                         <p>{feature}</p>
                       </div>
                     ))}
@@ -129,7 +129,7 @@ const PricePlan = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-full py-3 px-6 bg-gradient-to-r from-mypurple to-mysky text-white rounded-full font-medium shadow-md hover:shadow-lg transition-all duration-300"
+                    className="w-full py-3 px-6 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium shadow-md hover:shadow-lg transition-all duration-300"
                   >
                     Buy Now
                   </motion.button>

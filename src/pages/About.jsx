@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import PageHeader from "../components/ui/PageHeader";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { FaXTwitter } from "react-icons/fa6";
 
 const About = () => {
   useEffect(() => {
@@ -41,7 +42,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="max-w-6xl mx-auto grid grid-cols-1 mdl:grid-cols-[40%_60%] items-center gap-5 lg:gap-5 px-6 xxs:px-8 mdl:px-10 grid-flow-row-reverse"
+          className="max-w-6xl mx-auto  px-6 xxs:px-8 mdl:px-10 "
         >
           <div className="space-y-7 md:pb-0 pb-10 order-1 mdl:order-2">
             <p className="uppercase text-sm tracking-widest">About Me</p>
@@ -50,16 +51,16 @@ const About = () => {
             </h1>
             <p className="text-gray-500 text-[13px] xxxs:text-sm font-light leading-6 xxxs:leading-7 text-justify">
               Hi, {`I'm`} Sadaf Shahab, a{" "}
-              <strong className="font-bold text-mypurple">
-                Front-End Developer
+              <strong className="font-bold text-primary">
+                MERN Stack Developer
               </strong>{" "}
               specializing in{" "}
-              <strong className="font-bold text-mypurple">
+              <strong className="font-bold text-primary">
                 {" "}
                 React.js, Next.js, and Tailwind CSS{" "}
               </strong>
               . I craft high-performance,
-              <strong className="font-bold text-mypurple uppercase">
+              <strong className="font-bold text-primary uppercase">
                 {" "}
                 responsive
               </strong>{" "}
@@ -78,48 +79,37 @@ const About = () => {
                 className="button flex items-center gap-2 hover:bg-gradient-to-b hover:from-textlightBlack hover:to-textlightBlack"
               >
                 <MdOutlineFileDownload className="w-5 h-5" />
-                Download CV
+                <p >Download CV</p>
               </a>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/sadafshahab12"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-2xl hover:text-mypurple transition-colors"
+                  className="text-2xl hover:text-primary transition-colors"
                 >
                   <FaGithub />
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/sadaf-shahab-ss01"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-2xl hover:text-mypurple transition-colors"
+                  className="text-2xl hover:text-primary transition-colors"
                 >
                   <FaLinkedin />
                 </a>
                 <a
-                  href="https://twitter.com/yourusername"
+                  href="https://x.com/sadafshahab12"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-2xl hover:text-mypurple transition-colors"
+                  className="text-2xl hover:text-primary transition-colors"
                 >
-                  <FaTwitter />
+               <FaXTwitter />
                 </a>
               </div>
             </div>
           </div>
-          <div className="justify-items-center mdl:order-1 order-2 relative flex justify-center items-center group">
-            <img 
-              src="/frame5.png"
-              alt="sadaf-hero-img"
-              className="h-auto w-full max-w-[200px] xxxs:max-w-[250px] xxs:max-w-sm transition-transform duration-300 group-hover:scale-105"
-            />
-            <img
-              src="/aboutme.png"
-              alt="sadaf-hero-img"
-              className="absolute w-3/4 md:w-5/5 max-w-[300px] xs:max-w-[350px] object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
+   
         </motion.div>
 
         {/* Skills Section */}
@@ -144,7 +134,7 @@ const About = () => {
                     whileInView={{ width: `${skill.level}%` }}
                     transition={{ duration: 1, ease: "easeOut" }}
                     viewport={{ once: true }}
-                    className="h-full bg-gradient-to-r from-mypurple to-mysky rounded-full"
+                    className="h-full bg-gradient-to-r from-primary to-secondary rounded-full"
                   />
                 </div>
               </div>
@@ -169,11 +159,11 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="relative pl-8 border-l-2 border-mypurple"
+                className="relative pl-8 border-l-2 border-primary"
               >
-                <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-mypurple" />
+                <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary" />
                 <div className="space-y-2">
-                  <span className="text-mypurple font-medium">{exp.year}</span>
+                  <span className="text-primary font-medium">{exp.year}</span>
                   <h3 className="text-xl font-semibold">{exp.title}</h3>
                   <p className="text-gray-600">{exp.company}</p>
                   <p className="text-gray-500">{exp.description}</p>

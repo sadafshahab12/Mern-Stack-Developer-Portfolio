@@ -98,13 +98,13 @@ const Certificate = () => {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-2">
-                    <FaCertificate className="text-mypurple w-5 h-5" />
+                    <FaCertificate className="text-primary w-5 h-5" />
                     <span className="text-sm font-medium text-gray-600">
                       {cert.type}
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <FaAward className="text-mysky w-5 h-5" />
+                    <FaAward className="text-secondary w-5 h-5" />
                     <span className="text-sm font-medium text-gray-600">
                       {cert.date}
                     </span>
@@ -114,7 +114,7 @@ const Certificate = () => {
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full py-2 px-4 bg-gradient-to-r from-mypurple to-mysky text-white rounded-lg font-medium hover:shadow-lg transition-shadow duration-300"
+                  className="w-full py-2 px-4 bg-gradient-to-r from-primary to-secondary text-white rounded-lg font-medium hover:shadow-lg transition-shadow duration-300"
                   onClick={() => window.open(cert.image, "_blank")}
                 >
                   View Certificate

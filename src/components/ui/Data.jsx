@@ -12,27 +12,6 @@ import {
 } from "react-icons/fa";
 export const projectData = [
   {
-    title: "Shoose Ecommerce Website",
-    icon: [
-      <FaReact key="react" className="w-4 h-4" />,
-      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
-    ],
-    image: "/project/Shoes Ecommerce Website.png",
-    technologies_used: ["React JS", "Ecommerce"],
-    link: "https://internship-pakistan-task-5-shoose-website.vercel.app/",
-  },
-  {
-    title: "NewsHive Website",
-    icon: [
-      <FaReact key="react" className="w-4 h-4" />,
-      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
-      <SiFirebase key="firebase" className="w-4 h-4" />,
-    ],
-    image: "/project/NewsHive Website.png",
-    technologies_used: ["React JS", "API", "Auth"],
-    link: "https://internship-pakistan-third-task-news-website-news-hive.vercel.app/",
-  },
-  {
     title: "Furniro Ecommerce Website",
     technologies_used: [
       "Next JS",
@@ -52,6 +31,17 @@ export const projectData = [
     link: "https://uiux-hackathon-2-nextjs-design-jam-2024.vercel.app/",
   },
   {
+    title: "Rise Up",
+    icon: [
+      <TbBrandNextjs key={"NextJs"} className="w-4 h-4" />,
+      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
+      <SiFigma key={"figma"} className="w-4 h-4" />,
+    ],
+    image: "/project/rise up.png",
+    link: "https://rise-up-website-next-js-assignment-7.vercel.app/",
+    technologies_used: ["Next JS", "Figma Design"],
+  },
+  {
     title: "Shoe Ecommerce Store",
     technologies_used: ["Next JS", "API", "Ecommerce"],
     icon: [
@@ -61,6 +51,52 @@ export const projectData = [
     image: "/project/shoes website.png",
     link: "https://miles-stone-3-simple-ecommerce-store.vercel.app",
   },
+  {
+    title: "Nex Gen Academy",
+    icon: [
+      <TbBrandNextjs key={"NextJs"} className="w-4 h-4" />,
+      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
+      <SiFigma key={"figma"} className="w-4 h-4" />,
+    ],
+    image: "/project/next gen academy.png",
+    link: "https://nex-gen-academy.vercel.app/",
+    technologies_used: ["Next JS", "Figma Design"],
+  },
+  {
+    title: "Curiosity Unfold",
+    icon: [
+      <TbBrandNextjs key={"NextJs"} className="w-4 h-4" />,
+      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
+      <SiClerk key={"clerk"} className="w-4 h-4" />,
+      <SiSanity key={"sanity"} className="w-4 h-4" />,
+    ],
+    image: "/project/curiosity blog.png",
+    link: "https://curiosity-unfold-blog-website.vercel.app/",
+    technologies_used: ["Next JS", "Sanity", "Auth", "Blog"],
+  },
+  {
+    title: "Shoose Ecommerce Website",
+    icon: [
+      <FaReact key="react" className="w-4 h-4" />,
+      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
+    ],
+    image: "/project/Shoes Ecommerce Website.png",
+    technologies_used: ["React JS", "Ecommerce"],
+    link: "https://internship-pakistan-task-5-shoose-website.vercel.app/",
+  },
+
+  {
+    title: "NewsHive Website",
+    icon: [
+      <FaReact key="react" className="w-4 h-4" />,
+      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
+      <SiFirebase key="firebase" className="w-4 h-4" />,
+    ],
+    image: "/project/NewsHive Website.png",
+    technologies_used: ["React JS", "API", "Auth"],
+    link: "https://internship-pakistan-third-task-news-website-news-hive.vercel.app/",
+  },
+
   {
     title: "Cat Fact",
     icon: [
@@ -114,29 +150,7 @@ export const projectData = [
     link: "https://next-js-assignment-post-api-post-sphere.vercel.app/",
     technologies_used: ["Next JS", "API", "Auth"],
   },
-  {
-    title: "Curiosity Unfold",
-    icon: [
-      <TbBrandNextjs key={"NextJs"} className="w-4 h-4" />,
-      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
-      <SiClerk key={"clerk"} className="w-4 h-4" />,
-      <SiSanity key={"sanity"} className="w-4 h-4" />,
-    ],
-    image: "/project/curiosity blog.png",
-    link: "https://curiosity-unfold-blog-website.vercel.app/",
-    technologies_used: ["Next JS", "Sanity", "Auth", "Blog"],
-  },
-  {
-    title: "Rise Up",
-    icon: [
-      <TbBrandNextjs key={"NextJs"} className="w-4 h-4" />,
-      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
-      <SiFigma key={"figma"} className="w-4 h-4" />,
-    ],
-    image: "/project/rise up.png",
-    link: "https://rise-up-website-next-js-assignment-7.vercel.app/",
-    technologies_used: ["Next JS", "Figma Design"],
-  },
+
   {
     title: "Portfolio",
     icon: [
@@ -146,17 +160,6 @@ export const projectData = [
     image: "/project/portfolio1.png",
     link: "https://next-js-assignment-5-portfolio.vercel.app/",
     technologies_used: ["Next JS"],
-  },
-  {
-    title: "Nex Gen Academy",
-    icon: [
-      <TbBrandNextjs key={"NextJs"} className="w-4 h-4" />,
-      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
-      <SiFigma key={"figma"} className="w-4 h-4" />,
-    ],
-    image: "/project/next gen academy.png",
-    link: "https://nex-gen-academy.vercel.app/",
-    technologies_used: ["Next JS", "Figma Design"],
   },
 
   {

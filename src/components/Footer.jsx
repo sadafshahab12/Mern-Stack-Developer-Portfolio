@@ -4,7 +4,6 @@ import {
   IoLogoGithub,
   IoLogoInstagram,
   IoLogoLinkedin,
-  IoLogoTwitter,
   IoLogoWhatsapp,
   IoMailOutline,
   IoLocationOutline,
@@ -12,6 +11,7 @@ import {
 } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const socialLinks = [
@@ -31,7 +31,7 @@ const Footer = () => {
       label: "Facebook",
     },
     {
-      icon: <IoLogoTwitter className="w-5 h-5" />,
+      icon: <FaXTwitter className="w-5 h-5" />,
       href: "https://www.x.com/sadafshahab12",
       label: "Twitter",
     },
@@ -91,25 +91,25 @@ const Footer = () => {
           <motion.div className="space-y-4" variants={itemVariants}>
             <div className="flex items-center gap-3">
               <img
-                src="/logo.png"
+                src="/logo2.png"
                 alt="logo"
                 className="w-12 h-12 object-contain"
               />
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-mypurple to-mysky bg-clip-text text-transparent">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Sadaf Shahab
               </h1>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               A passionate{" "}
-              <span className="text-mypurple font-semibold">
+              <span className="text-primary font-semibold">
                 Front-End Developer
               </span>{" "}
               specializing in{" "}
-              <span className="text-mypurple font-semibold">
+              <span className="text-primary font-semibold">
                 React.js, Next.js
               </span>
               , and{" "}
-              <span className="text-mypurple font-semibold">Tailwind CSS</span>.
+              <span className="text-primary font-semibold">Tailwind CSS</span>.
               Crafting sleek, high-performance web applications with clean,
               scalable code.
             </p>
@@ -120,7 +120,7 @@ const Footer = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-mypurple transition-colors duration-300"
+                  className="text-gray-400 hover:text-primary transition-colors duration-300"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label={link.label}
@@ -141,9 +141,9 @@ const Footer = () => {
                 <motion.li key={index} whileHover={{ x: 5 }}>
                   <Link
                     to={link.to}
-                    className="text-gray-300 hover:text-mypurple transition-colors duration-300 flex items-center gap-2"
+                    className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center gap-2"
                   >
-                    <span className="w-1.5 h-1.5 bg-mypurple rounded-full"></span>
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
                     {link.label}
                   </Link>
                 </motion.li>
@@ -159,23 +159,23 @@ const Footer = () => {
             <div className="space-y-3">
               <a
                 href="mailto:sadafshahabsr12@gmail.com"
-                className="flex items-center gap-3 text-gray-300 hover:text-mypurple transition-colors duration-300"
+                className="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors duration-300"
               >
-                <IoMailOutline className="w-5 h-5 text-mypurple" />
+                <IoMailOutline className="w-5 h-5 text-primary" />
                 <span className="text-sm">sadafshahabsr12@gmail.com</span>
               </a>
               <a
                 href="mailto:sadafshahab123@yahoo.com"
-                className="flex items-center gap-3 text-gray-300 hover:text-mypurple transition-colors duration-300"
+                className="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors duration-300"
               >
-                <FaYahoo className="w-5 h-5 text-mypurple" />
+                <FaYahoo className="w-5 h-5 text-primary" />
                 <span className="text-sm">sadafshahab123@yahoo.com</span>
               </a>
               <a
                 href="tel:+923402195735"
-                className="flex items-center gap-3 text-gray-300 hover:text-mypurple transition-colors duration-300"
+                className="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors duration-300"
               >
-                <IoCallOutline className="w-5 h-5 text-mypurple" />
+                <IoCallOutline className="w-5 h-5 text-primary" />
                 <span className="text-sm">+92 340 2195735</span>
               </a>
             </div>
@@ -194,11 +194,11 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-mypurple text-sm"
+                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-primary text-sm"
                 />
                 <motion.button
                   type="submit"
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r from-mypurple to-mysky px-4 py-1 rounded-md text-sm font-medium"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r from-primary to-secondary px-4 py-1 rounded-md text-sm font-medium"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >

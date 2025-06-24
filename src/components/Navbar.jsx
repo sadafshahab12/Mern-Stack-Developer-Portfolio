@@ -58,11 +58,11 @@ const Navbar = () => {
           >
             <Link to="/" className="flex items-center gap-2">
               <img
-                src="/logo.png"
+                src="/logo2.png"
                 alt="logo"
                 className="w-10 h-10 object-contain"
               />
-              <span className="text-xl font-bold bg-gradient-to-r from-mypurple to-mysky bg-clip-text text-transparent">
+              <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Sadaf
               </span>
             </Link>
@@ -81,15 +81,15 @@ const Navbar = () => {
                     to={link.to}
                     className={`uppercase text-sm font-medium transition-colors duration-300 ${
                       location.pathname === link.to
-                        ? "text-mypurple"
-                        : "text-gray-600 hover:text-mypurple"
+                        ? "text-primary"
+                        : "text-gray-600 hover:text-primary"
                     }`}
                   >
                     {link.label}
                     {location.pathname === link.to && (
                       <motion.div
                         layoutId="navbar-indicator"
-                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-mypurple to-mysky"
+                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-secondary"
                         transition={{ type: "spring", duration: 0.5 }}
                       />
                     )}
@@ -107,7 +107,7 @@ const Navbar = () => {
           >
             <button
               onClick={handleToggleMenu}
-              className="text-gray-600 hover:text-mypurple transition-colors duration-300"
+              className="text-gray-600 hover:text-primary transition-colors duration-300"
             >
               {toggleMenu ? (
                 <IoCloseOutline className="w-6 h-6" />
@@ -144,8 +144,8 @@ const Navbar = () => {
                       onClick={handleCloseMenu}
                       className={`block text-lg font-medium transition-colors duration-300 ${
                         location.pathname === link.to
-                          ? "text-mypurple"
-                          : "text-gray-600 hover:text-mypurple"
+                          ? "text-primary"
+                          : "text-gray-600 hover:text-primary"
                       }`}
                     >
                       {link.label}

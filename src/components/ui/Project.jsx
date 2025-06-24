@@ -102,7 +102,7 @@ const Project = () => {
                 whileTap={{ scale: 0.95 }}
                 className={`cursor-pointer px-4 py-2 rounded-full transition-all duration-300 ${
                   selectedFilter === filter
-                    ? "bg-gradient-to-r from-mypurple to-mysky text-white shadow-lg"
+                    ? "bg-gradient-to-r from-primary to-secondary  shadow-lg"
                     : "text-black hover:bg-gray-100"
                 }`}
                 onClick={() => setSelectedFilter(filter)}
@@ -145,7 +145,7 @@ const Project = () => {
                     }}
                     className={`${
                       selectedFilter === filter
-                        ? "bg-gradient-to-r from-mypurple to-mysky text-white"
+                        ? "bg-gradient-to-r from-primary to-secondary text-white"
                         : "text-textlightblack"
                     } w-full text-12 font-light py-3 text-center block cursor-pointer transition-colors duration-300`}
                   >
@@ -180,7 +180,7 @@ const Project = () => {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white flex items-center gap-2 hover:text-mypurple transition-colors duration-300"
+                        className="text-white flex items-center gap-2 hover:text-primary transition-colors duration-300"
                       >
                         <span>View Project</span>
                         <BsBoxArrowUpRight className="w-5 h-5" />
@@ -188,7 +188,7 @@ const Project = () => {
                     </div>
                   </div>
                   <div className="p-5 space-y-3">
-                    <h2 className="text-lg font-semibold text-gray-800 group-hover:text-mypurple transition-colors duration-300">
+                    <h2 className="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors duration-300">
                       {project.title}
                     </h2>
                     <div className="flex flex-wrap gap-2">
@@ -196,7 +196,7 @@ const Project = () => {
                         project.icon.map((icon, idx) => (
                           <span
                             key={idx}
-                            className="bg-gradient-to-r from-mypurple to-mysky p-1.5 rounded-md text-white transform hover:scale-110 transition-transform duration-300"
+                            className="bg-gradient-to-r from-primary to-secondary p-1.5 rounded-md text-white transform hover:scale-110 transition-transform duration-300"
                           >
                             {icon}
                           </span>
@@ -229,7 +229,7 @@ const Project = () => {
             className={`h-10 w-10 flex justify-center items-center cursor-pointer rounded-full transition-all duration-300 ${
               currentPage === 1
                 ? "bg-gray-200 text-gray-500 cursor-not-allowed"
-                : "bg-gradient-to-r from-mypurple to-mysky text-white hover:shadow-lg"
+                : "bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg"
             }`}
           >
             <IoChevronBack />
@@ -244,7 +244,7 @@ const Project = () => {
                 onClick={() => setCurrentPage(index + 1)}
                 className={`w-8 h-8 cursor-pointer rounded-full flex items-center justify-center text-sm font-medium transition-all duration-300 ${
                   currentPage === index + 1
-                    ? "bg-gradient-to-r from-mypurple to-mysky text-white"
+                    ? "bg-gradient-to-r from-primary to-secondary text-white"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}
               >
@@ -261,7 +261,7 @@ const Project = () => {
             className={`h-10 w-10 flex justify-center items-center cursor-pointer py-2 rounded-full  transition-all duration-300 ${
               currentPage === totalPages
                 ? "bg-gray-200 text-gray-500 cursor-not-allowed"
-                : "bg-gradient-to-r from-mypurple to-mysky text-white hover:shadow-lg"
+                : "bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg"
             }`}
           >
             <IoChevronForward />

@@ -96,7 +96,7 @@ const ProjectStats = () => {
 
   return (
     <section 
-      className="stats-section bg-gradient-to-r from-mypurple to-mysky min-h-70 py-16"
+      className="stats-section bg-gradient-to-r from-primary to-secondary min-h-70 py-16"
       aria-label="Project Statistics"
     >
       <motion.div
