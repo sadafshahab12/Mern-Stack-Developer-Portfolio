@@ -17,6 +17,7 @@ const About = () => {
     { name: "JavaScript", level: 90 },
     { name: "TypeScript", level: 80 },
     { name: "HTML/CSS", level: 95 },
+    { name: "BootStrap", level: 75 },
     { name: "Figma (UI/UX)", level: 85 },
   ];
 
@@ -25,7 +26,6 @@ const About = () => {
     { name: "Express.js", level: 80 },
     { name: "MongoDB", level: 90 },
     { name: "Python", level: 75 },
-    { name: "Java", level: 70 },
   ];
 
   const experience = [

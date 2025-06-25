@@ -31,9 +31,10 @@ const Hero = () => {
             <strong className="font-bold text-primary">
               MERN Stack Developer
             </strong>
-            r with expertise in{" "}
+            with expertise in{" "}
             <strong className="font-bold text-primary">
-              React.js, Next.js (TypeScript), and Tailwind CSS
+              React.js, Node.js, Express.js, Mongodb, Next.js (TypeScript), and
+              Tailwind CSS
             </strong>
             , passionate about building responsive, high-performance web
             applications.

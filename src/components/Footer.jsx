@@ -54,6 +54,7 @@ const Footer = () => {
     { to: "/portfolio", label: "Portfolio" },
     { to: "/pricing", label: "Pricing" },
     { to: "/contact", label: "Contact" },
+    { to: "/privacy", label: "Privacy policy" },
   ];
 
   const containerVariants = {
