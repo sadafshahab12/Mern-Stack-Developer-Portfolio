@@ -19,6 +19,24 @@ import {
 import { DiMongodb } from "react-icons/di";
 export const projectData = [
   {
+    title: "Product Catalog (Full Stack)",
+    technologies_used: [
+      "React Js",
+      "Tailwind Css",
+      "Node js",
+      "express js",
+      "Full Stack",
+    ],
+    icon: [
+      <FaReact key={"ReactJS"} className="w-4 h-4" />,
+      <RiTailwindCssFill key="tailwind" className="w-4 h-4" />,
+      <FaNodeJs key={"nodejs"} className="w-4 h-4" />,
+      <SiExpress key={"expressjs"} className="w-4 h-4" />,
+    ],
+    image: "project/product catalog.png",
+    link: "https://product-catalog-mern-frontend.vercel.app/",
+  },
+  {
     title: "Food APP (Full Stack)",
     technologies_used: [
       "React Js",
