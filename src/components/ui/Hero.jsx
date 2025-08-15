@@ -45,7 +45,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="/mern stack developer.pdf"
+                href="/B.com +  Mern Stack Developer.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Download Resume"
